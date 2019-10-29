@@ -106,7 +106,6 @@
             foreach ($testimonials as $kTestimonial=>$vTestimonial) {
         ?>
         <div class="testimony">
-          <img src="<?php echo $vTestimonial['featured_image']['url'];?>" alt="Image" class="img-fluid">
           <h3><?php echo $vTestimonial['title']['rendered'];?></h3>
           <span class="sub-title"><?php echo $vTestimonial['acf']['testimonial_job_title'];?></span>
           <p class"clamped-text"><?php echo $vTestimonial['content']['rendered'];?></p>
