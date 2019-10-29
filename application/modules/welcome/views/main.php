@@ -2,8 +2,8 @@
       <div class="container">
         <div class="row align-items-center text-center justify-content-center">
           <div class="col-md-8">
-            <span class="sub-text">Interior Design Company</span>
-            <h1>Experience Interior Design</h1>
+            <span class="sub-text">Contractor Company</span>
+            <h1>Falco Konstruksi</h1>
           </div>
         </div>
       </div>
@@ -32,14 +32,14 @@
       </div>
     </div>
 
-    <div class="site-section  border-bottom">
+    <div class="site-section border-bottom">
       <div class="container">
         <div class="row">
           <?php 
             if (count($middle_block) > 0) {
               foreach ($middle_block as $kMiddleBlock=>$vMiddleBlock) {
           ?>
-          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+          <div class="col-md-6 mb-5 mb-lg-0">
             <div class="media custom-media">
               <div class="mr-3 icon"><span class="flaticon-interior-design display-4"></span></div>
               <div class="media-body">
