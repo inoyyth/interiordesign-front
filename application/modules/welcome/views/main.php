@@ -17,7 +17,7 @@
             foreach($top_block as $kTopBlock=>$vTopBlock) {
           ?>
           <div class="col-lg-4">
-            <a href="#" class="site-block-feature d-flex p-4 rounded mb-4">
+            <a href="#" onclick="dataLayer.push({'event': 'click-event-<?php echo $vTopBlock['title']['rendered'];?>'});" class="site-block-feature d-flex p-4 rounded mb-4">
               <div class="mr-3">
                 <span class="icon flaticon-window font-weight-light h2"></span>
               </div>
