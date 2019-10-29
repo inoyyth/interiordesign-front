@@ -19,28 +19,66 @@
 			<div><?php echo $contact[0]['content']['rendered'];?></div>
 			<form id="form-inquiry" lass="p-5 bg-white" action="contact_us/submit_inquiry">
 			  <input type="hidden" name="<?=$csrf['name'];?>_inquiry" id="<?=$csrf['name'];?>_inquiry" value="<?=$csrf['hash'];?>"/>
+				
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="font-weight-bold" for="fullname">Full Name</label>
-                  <input type="text" name="name-inquiry" id="name-inquiry" required="true" class="form-control" placeholder="Full Name">
+                  <label class="font-weight-bold" for="fullname">Full name</label>
+                  <input type="text" id="fullname" class="form-control" placeholder="Full Name">
                 </div>
-			  </div>
-			  <div class="row form-group">
+              </div>
+              <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="font-weight-bold" for="email">Phone</label>
-                  <input name="phone-inquiry" id="phone-inquiry" required="true" type="number" class="form-control" placeholder="Phone">
+                  <label class="font-weight-bold" for="phone">Phone no.</label>
+                  <input type="text" id="email" class="form-control" placeholder="Phone No.">
                 </div>
               </div>
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="font-weight-bold" for="email">Email</label>
-                  <input type="email"  name="email-inquiry" id="email-inquiry" required="true" class="form-control" placeholder="Email Address">
+                  <input type="email" id="email" class="form-control" placeholder="Email Address">
                 </div>
               </div>
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="font-weight-bold" for="message">Message</label> 
-                  <textarea name="message-inquiry" id="message-inquiry" required="true" cols="30" rows="5" class="form-control" placeholder="Say hello to us"></textarea>
+                  <label class="font-weight-bold">Type of works</label>
+                  <select id="typeworks" class="form-control">
+                    <option value="choose" disabled selected>Please choose</option>
+                    <option value="house">Houses</option>
+                    <option value="renovation">Renovation</option>
+                    <option value="other">Others</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="font-weight-bold">Starting projects</label>
+                  <select id="starting" class="form-control">
+                    <option value="choose" disabled selected>Please choose</option>
+                    <option value="asap">As soon as possible</option>
+                    <option value="month1">1 - 3 Months</option>
+                    <option value="month2">4 - 7 Months</option>
+                    <option value="month3">8 - 12 Months</option>
+                    <option value="dontknow">Don't know</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="font-weight-bold" for="location">Location</label>
+                  <input type="text" id="location" class="form-control" placeholder="Location">
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="font-weight-bold">Contact via</label>
+                  <select id="contact" class="form-control">
+                    <option value="choose" disabled selected>Please choose</option>
+                    <option value="wa">Whatsapp</option>
+                    <option value="sms">SMS</option>
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="anything">Anything</option>
+                  </select>
                 </div>
               </div>
 
