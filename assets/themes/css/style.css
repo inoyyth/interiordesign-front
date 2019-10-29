@@ -7496,7 +7496,10 @@ h1, h2, h3, h4, h5, h6 {
   .site-navbar-wrap a {
     color: #fff; }
   .site-navbar-wrap .site-navbar-top {
-    font-size: 0.8rem; }
+    background: rgb(54, 54, 54, 0.9);
+    font-size: 0.8rem;
+    position: fixed;
+    width: 100%; }
 
 .site-navbar-top {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
@@ -8549,6 +8552,10 @@ a.figure-index img {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+.site-logo a img {
+  width: 132px !important;
+  height: 54px !important;
 }
 
 
