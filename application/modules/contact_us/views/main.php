@@ -54,10 +54,10 @@
                   <label class="font-weight-bold">Starting projects</label>
                   <select id="starting" name="starting_project" class="form-control" required>
                     <option value="" disabled selected>Please choose</option>
-                    <option value="asap">As soon as possible</option>
-                    <option value="month1">1 - 3 Months</option>
-                    <option value="month2">4 - 7 Months</option>
-                    <option value="month3">8 - 12 Months</o ption>
+                    <option value="As soon as possible">As soon as possible</option>
+                    <option value="1 - 3 Months">1 - 3 Months</option>
+                    <option value="4 - 7 Months">4 - 7 Months</option>
+                    <option value="8 - 12 Months">8 - 12 Months</o ption>
                     <option value="don't know">Don't know</option>
                   </select>
                 </div>
