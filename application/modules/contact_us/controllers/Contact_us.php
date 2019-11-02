@@ -31,7 +31,7 @@ class Contact_us extends MX_Controller {
 			'name' => $this->security->get_csrf_token_name(),
 			'hash' => $this->security->get_csrf_hash()
 		);
-		$data['header_title'] = 'Kontak Bayo Binsar';
+		$data['header_title'] = 'Kontak Falcokonstruksi';
 		$data['header_description'] = 'Hubungi Bayo Binsar untuk konsultasi mengenai gaya hidup, keuangan, motivasi, bisnis properti, publik speaking dan sales & marketing';
 		$data['view'] = 'contact_us/main';
 		$data['js'] = array('assets/custom_js/contact_us_inquiry.js');
@@ -49,10 +49,14 @@ class Contact_us extends MX_Controller {
 		);
 
 		$data = array(
-			'email' => $this->input->post('email-inquiry'),
-			'name' => $this->input->post('name-inquiry'),
-			'message' => $this->input->post('message-inquiry'),
-			'phone' => $this->input->post('phone-inquiry')
+			'email' => $this->input->post('email-contact'),
+			'name' => $this->input->post('fullname'),
+			'phone' => $this->input->post('phone'),
+			'type_works' => $this->input->post('type_works'),
+			'starting_project' => $this->input->post('starting_project'),
+			'budget' => $this->input->post('budget'),
+			'location' => $this->input->post('location'),
+			'contact_via' => $this->input->post('contact_via')
 		);
 
 		$post = $this->curl->simple_post($this->config->item('rest_api_inoy') . '/inquiry', $data);
@@ -60,7 +64,7 @@ class Contact_us extends MX_Controller {
 		if ( $post ) {
 			$response = array(
 				'status'=>200, 
-				'message' => 'Your inquiry is success submited'
+				'message' => 'Your inquiry is success submited',
 			);
 			// $this->__sendMail($data);
 		} else {

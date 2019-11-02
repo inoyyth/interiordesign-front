@@ -63,4 +63,5 @@ $route['project/([a-z-0-9]+)-([0-9]+)'] = 'project/detail/$2';
 $route['article/([a-z-0-9]+)'] = 'blog/category/$1';
 $route['event'] = 'event/index';
 $route['email-subscript'] = 'welcome/email_subscript';
+$route['contact-us/inquiry'] = 'contact_us/send_inquiry';
 //$route['blog/post-comment'] = 'blog/post_comment';
