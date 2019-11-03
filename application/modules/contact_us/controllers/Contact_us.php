@@ -66,7 +66,7 @@ class Contact_us extends MX_Controller {
 				'status'=>200, 
 				'message' => 'Your inquiry is success submited',
 			);
-			// $this->__sendMail($data);
+			$this->__sendMail($data);
 		} else {
 			$response = array(
 				'status'=>400, 
@@ -78,7 +78,7 @@ class Contact_us extends MX_Controller {
 
 	private function __sendMail($data) {
         $msg = $this->load->view('contact_us/include/email_inquiry',$data,true);
-        $this->email->from('supri170845@gmail.com', 'Falco Konstruksi Official Website');
+        $this->email->from('noreply@falcokonstruksi.com', 'Falco Konstruksi Official Website');
         $this->email->to($data['email']); 
         $this->email->subject('Terima Kasih Telah Kirim Pesan Ke Bayo Binsar');
         $this->email->message($msg);  
@@ -92,8 +92,8 @@ class Contact_us extends MX_Controller {
 	
 	private function __sendMailOwn($data) {
         $msg = $this->load->view('contact_us/include/email_own_inquery',$data,true);
-        $this->email->from('supri170845@gmail.com', 'Falco Konstruksi Official Website');
-        $this->email->to('supri170845@gmail.com'); 
+        $this->email->from('noreply@falcokonstruksi.com', 'Falco Konstruksi Official Website');
+        $this->email->to('service@falcokonstruksi.com'); 
         $this->email->subject('Inquery From ' . $data['name']);
         $this->email->message($msg);  
 		if ($this->email->send()) {
@@ -102,5 +102,19 @@ class Contact_us extends MX_Controller {
 			show_error($this->email->print_debugger());
 			exit;
 		}
-    }
+	}
+	
+	public function test_mail() {
+		// $msg = $this->load->view('contact_us/include/email_own_inquery',$data,true);
+		$this->email->from('noreply@falcokonstruksi.com', 'Falco Konstruksi Official Website');
+		$this->email->to('supri170845@gmail.com'); 
+		$this->email->subject('Inquery From Inoy');
+		$this->email->message('test');  
+		if ($this->email->send()) {
+			return true;
+		} else {
+			show_error($this->email->print_debugger());
+			exit;
+		}
+	}
 }

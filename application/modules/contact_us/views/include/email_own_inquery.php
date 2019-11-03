@@ -282,7 +282,7 @@
           <div class="content">
 
             <!-- START CENTERED WHITE CONTAINER -->
-            <span class="preheader">Bayo Binsar Manullang</span>
+            <span class="preheader">Admin Falco Konstruksi</span>
             <table role="presentation" class="main">
 
               <!-- START MAIN CONTENT AREA -->
@@ -291,14 +291,18 @@
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
-                        <p style='text-transform: capitalize;'>Hi <b>Bayo Binsar Manullang</b>,</p>
+                        <p style='text-transform: capitalize;'>Hi <b>Admin Falco Konstruksi</b>,</p>
                         <p>Saat ini Anda mendapatkan email dari user yang mengunjungi website <?php echo base_url();?></p>
                         <br>
                         <p>Berikut ini informasinya: </p>
                         <p>Nama: <?php echo $name;?></p>
                         <p>Email: <?php echo $email;?></p>
                         <p>Phone: <?php echo $phone;?></p>
-                        <p>Pesan: <?php echo $message;?></p>
+                        <p>Tipe Pekerjaan: <?php echo $type_works;?></p>
+                        <p>Mulai Perkerjaan: <?php echo $starting_project;?></p>
+                        <p>Budget: <?php echo $budget;?></p>
+                        <p>Lokasi: <?php echo $location;?></p>
+                        <p>Ingin Dikontak Melalui: <?php echo $contact_via;?></p>
                         <br>
                         <br>
                         <!-- <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
@@ -338,7 +342,7 @@
                 </tr> -->
                 <tr>
                   <td class="content-block powered-by">
-                    Powered by <a href="<?php echo base_url();?>">Bayo Binsar Manullang</a>.
+                    Powered by <a href="<?php echo base_url();?>">Falco Konstruksi</a>.
                   </td>
                 </tr>
               </table>

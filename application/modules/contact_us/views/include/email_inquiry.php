@@ -330,7 +330,7 @@
                 </tr> -->
                 <tr>
                   <td class="content-block powered-by">
-                    Powered by <a href="<?php echo base_url();?>">Bayo Binsar Manullang</a>.
+                    Powered by <a href="<?php echo base_url();?>">Falco Konstruksi</a>.
                   </td>
                 </tr>
               </table>
